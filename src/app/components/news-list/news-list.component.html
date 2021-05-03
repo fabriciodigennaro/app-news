@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div *ngFor="let oneNew of listNews" class="col mb-4">
+      <div class="card" style="min-height: 100%;">
+        <img [src]="oneNew.urlToImage" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="badge badge-primary mb-1">{{ oneNew.source.name }}</span>
+          <h5 class="card-title">{{ oneNew.title }}</h5>
+          <p class="card-text">{{ oneNew.description }}</p>
+          <a [href]="oneNew.url" target="_blank" class="btn btn-primary btn-block">Leer Más</a>
+        </div>
+      </div>
+    </div>
+  </div>
